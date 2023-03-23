@@ -1,0 +1,496 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+  .block-code
+	  display: none
+
+  
+  .foto__block
+    height: 400px
+
+
+  .info-block 
+    font-size: 22px
+
+  .theme-icon 
+    i 
+      font-size: 22px
+
+  .close
+    display: none
+
+  .name
+    font-size: 40px
+
+  .profesion-info
+    font-size: 32px
+
+  .contact__block 
+    font-size: 28px
+    p 
+      font-size: 22px
+    i 
+      font-size: 28px
+    
+
+  .contact__button 
+    a 
+      width: 80%
+      height: 60px
+      font-size: 18px
+
+  .profesion-info
+    font-size: 32px
+
+  .contact__button 
+    a 
+      width: 80%
+      height: 60px
+      font-size: 18px
+
+  .languages 
+    font-size: 28px
+
+  .languages__skill 
+    p 
+      font-size: 28px
+
+  .download 
+    font-size: 28px
+
+  .download__button 
+    h5
+      font-size: 28px
+
+  .container__right
+    h3 
+      font-size: 22px
+    p 
+      font-size: 18px
+
+  .block__title
+    height: 50px
+    font-size: 18px
+    &:before, &:after
+      content: ''
+      width: 10px
+      height: 1.1px
+      position: absolute
+      top: 22px
+
+  .foto__block
+	  width: 100% 
+	  // display: flex
+	  // justify-content: center
+	  // align-items: center
+	  // background-color: #fff
+	  color: #075D8C
+	  font-size: 150px
+	  position: relative
+	  img 
+		  width: 100%
+		  height: 100%     
+		  // position: absolute
+
+    
+
+// ≥992px
++media-breakpoint-down(md)
+  .block-code
+	  display: none
+    border: 1px solid green
+
+  .container__left
+    width: 100%
+    display: block
+    margin-bottom: 0px
+
+  .foto__block
+    height: 300px
+
+  .info-block 
+    font-size: 16px
+
+  .theme-icon 
+    i 
+      font-size: 16px
+
+  .close 
+    display: none
+
+  .name
+    font-size: 30px
+
+  .profesion-info
+    font-size: 25px
+
+  .contact__block 
+    font-size: 22px
+    p 
+      font-size: 16px
+    i 
+      font-size: 22px
+
+  .contact__button 
+    a 
+      width: 80%
+      height: 60px
+      font-size: 12px
+
+  .profesion-info
+    font-size: 28px
+    text-align: center
+
+  .contact__button 
+    a 
+      width: 80%
+      height: 40px
+      font-size: 12px
+
+  .languages 
+    font-size: 22px
+
+  .languages__skill 
+    p 
+      font-size: 22px
+
+  .download 
+    font-size: 22px
+
+  .download__button 
+    h5
+      font-size: 22px
+
+  .container__right
+    h3 
+      font-size: 16px
+    p 
+      font-size: 14px
+
+  .block__title
+    height: 50px
+    font-size: 18px
+    &:before, &:after
+      content: ''
+      width: 10px
+      height: 1.1px
+      position: absolute
+      top: 22px
+
+// ≥768px
++media-breakpoint-down(sm)
+
+// .mobile-block
+//     width: 210px
+//     height: 210px
+//     display: flex
+//     justify-content: center
+//     align-items: center
+//     border-radius: 50%
+//     background-color: #fff
+
+// .border-mob
+//     position: relative
+//     border: 0
+//     height: 200px
+//     width: 200px
+//     border-radius: 100%
+//     display: flex
+//     align-items: center
+//     justify-content: center
+
+// .border-mob:before 
+//   content: " "
+//   position: absolute
+//   left: 0
+//   right: 0
+//   top: 0
+//   bottom: 0
+//   border-radius: 100%
+//   border: 3px dashed #004776
+//   animation: rotate 60s linear infinite
+  
+// @keyframes rotate 
+//   0%  
+//     transform: rotate(0deg) 
+//   100%  
+//     transform: rotate(360deg) 
+    
+// .fhoto-block
+//     height: 180px
+//     width: 180px
+//     border-radius: 100%
+//     overflow: hidden
+//     img 
+//         margin-top: -40% 
+
+  .block-code
+	  display: none
+
+  .paragraph
+    padding: 0
+
+  .content
+    margin-top: 10px
+    margin-bottom: 10px
+    // display: flex
+    // justify-content: center
+
+  .container__left
+    width: 100%
+    display: block
+
+  .foto
+    width: 100%
+    height: auto
+
+  .foto__block
+    margin-right: 10px
+    height: 500px
+
+  .info-block 
+    font-size: 25px
+
+  .theme-icon 
+    i 
+      font-size: 25px
+
+  .close 
+    display: none
+    i 
+      font-size: 25px
+
+  .close
+    font-size: 20px
+    color: #202020
+    display: block
+    &:hover
+      color: #000000
+
+  .name
+    font-size: 45px
+
+  .profesion-info
+    padding: 0px 25px 0px 25px
+    font-size: 26px
+
+  .contact__block 
+    font-size: 30px
+    p 
+      font-size: 30px
+    i 
+      font-size: 30px
+
+  .contact__button 
+    a 
+      width: 80%
+      height: 60px
+      font-size: 20px
+
+  .languages 
+    font-size: 30px
+
+  .languages__skill 
+    p 
+      font-size: 30px
+
+  .download 
+    font-size: 30px
+
+  .download__button 
+    h5
+      font-size: 30px
+
+  .container__right
+    display: none
+    h3 
+      font-size: 22px
+    p 
+      font-size: 18px
+
+  .block__title
+    font-size: 20px
+
+  .work__link 
+    font-size: 18px
+
+  .block 
+    width: 100%
+    
+  .block__item
+    width: 100%
+    margin: 0
+
+  .about__my
+    display: flex
+
+  .education
+    padding-right: 15px
+
+  .close__two
+    font-size: 20px
+    color: #272727
+    display: block
+    margin-top: 20px
+    &:hover
+      color: #000000
+
+  .popup
+    width: 90%
+    height: 320px
+    font-size: 15px
+     
+  .block__title
+    height: 60px
+    font-size: 18px
+    &:before, &:after
+      content: ''
+      width: 10px
+      height: 1.1px
+      position: absolute
+      top: 28px
+
+  
+    
+// ≥576px
++media-breakpoint-down(xs)
+
+  .block-code
+	  display: none
+
+  .content
+    width: 100%
+    // display: flex
+    // justify-content: center
+     
+  .foto
+    width: 100%
+    height: auto
+  
+  .foto_block
+    border: 1px solid green
+
+  .foto__block
+    margin-right: 10px
+    height: 420px
+
+  .name
+    font-size: 35px
+
+  .profesion-info
+    width: 100%
+    text-align: center
+
+  .contact__block 
+    font-size: 20px
+    p 
+      font-size: 14px
+    i 
+      font-size: 20px
+
+  .contact__button 
+    a 
+      width: 70%
+      height: 40px
+      font-size: 14px
+      
+  .languages 
+    font-size: 20px
+
+  .languages__skill 
+    p 
+      font-size: 20px 
+
+  .download 
+    font-size: 20px
+
+  .download__button 
+    h5
+      font-size: 20px
+
+  .close
+    font-size: 20px
+    color: #202020
+    display: block
+    &:hover
+      color: #000000
+
+  .profesion__info
+    font-size: 12px
+
+  .block 
+    width: 100%
+    overflow: hidden
+    font-size: 11px
+
+  .container__right
+    display: none
+    h3 
+      font-size: 18px
+    p 
+      font-size: 16px
+
+  .work__link 
+    font-size: 16px
+
+  .education
+    padding-right: 15px
+
+  .close__two
+    font-size: 20px
+    color: #272727
+    display: block
+    margin-top: 20px
+    margin-left: 20px
+    &:hover
+      color: #000000
+
+  .block__title
+    height: 60px
+    font-size: 18px
+    &:before, &:after
+      content: ''
+      width: 10px
+      height: 1.1px
+      position: absolute
+      top: 28px
+
+  .foto__block
+	  width: 100% 
+	  // display: flex
+	  // justify-content: center
+	  // align-items: center
+	  // background-color: #fff
+	  color: #075D8C
+	  font-size: 150px
+	  // position: relative
+	  img 
+		  width: 100%
+		  height: auto
+		  // position: absolute
+
+
+    
+      
+   
+		 
+  
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+  
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
+
+  
