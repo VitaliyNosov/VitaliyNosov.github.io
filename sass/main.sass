@@ -1,6 +1,29 @@
 @import url(https://fonts.googleapis.com/css?family=Inconsolata:200,300,regular,500,600,700,800,900)
 
 
+// Стили для Firefox
+=firefox-scrollbar
+  scrollbar-width: thin
+  scrollbar-color: #034A72 #FFFBF5
+
+// Chrome, Edge и Safari
+=webkit-scrollbar
+  *::-webkit-scrollbar
+    width: 12px
+
+  *::-webkit-scrollbar-track
+    background: #FFFBF5
+
+  *::-webkit-scrollbar-thumb
+    background-color: #034A72
+    border-radius: 20px
+    border: 3px solid #FFFBF5
+
+// Применение стилей
+*
+  +firefox-scrollbar
+  +webkit-scrollbar
+
 // preloader two
 
 .border
@@ -21,9 +44,6 @@
 @keyframes dash
   to
     background-position: 100% 0%, 0% 100%, 0% 0%, 100% 100%
-
-
-  
 
 
 // preloader two
@@ -75,6 +95,8 @@ main
     list-style-type: none
 
 .paragraph ul li 
+  display: flex
+  align-items: center
   &:before
     // content: '\2666'
     content: '\f00c'
@@ -85,6 +107,33 @@ main
     color: #075D8C
 	
 // style 29.09.2022 block new	
+
+.paragraph-mod-block
+  display: inline
+
+  p
+    display: inline
+
+    .wordpress-name
+      display: inline
+      margin-left: 18px 
+      vertical-align: text-top
+
+      .wordpress-link
+        display: inline-block
+        text-decoration: none
+        color: inherit
+
+  @media (max-width: 1280px)
+    display: block
+
+    p
+      display: inline 
+
+    .wordpress-name
+      display: inline
+      margin-left: 18px
+      vertical-align: text-top
 
 h1
   font-size: 2em
@@ -3032,7 +3081,7 @@ body
   position: relative
   line-height: 1.65
   font-family: roboto-example,sans-serif
-  overflow: hidden
+  // overflow: hidden
   color: #333
   background: #ebebeb
 
@@ -3048,6 +3097,7 @@ body
 
 .wordpress-name
   position: relative
+  margin-left: 15px
 
 .wordpress-link
   position: absolute
@@ -3188,7 +3238,7 @@ b, strong
   -webkit-box-align: center
   -ms-flex-align: center
   align-items: center
-  background-color: #fff
+  background-color: #FBFBFB
 
 .close
   font-size: 24px
@@ -3340,7 +3390,9 @@ b, strong
 
   a
     color: #fff
-    margin: 5px
+    // margin: 5px
+    margin: 18px
+    font-size: 14px
 
     &:hover
       color: #d8d8d8
@@ -4318,8 +4370,6 @@ button
   .box 
     border: 1px solid #CBCBCB
 
-  
-
   .info-block, .theme-icon i
     font-size: 25px
 
@@ -4420,9 +4470,15 @@ button
       position: absolute
       top: 28px
 
+@media (max-width: 620px)
+  .mobile-color-mob
+    background-color: #075D8C
+  .paragraph ul li 
+    display: flex
+    align-items: center
+    font-size: 18px
+
 @media (max-width: 575.98px)
-
-
   .mobile-block
     width: 210px
     height: 210px
@@ -4681,4 +4737,22 @@ button
   to 
     opacity: 0
     transform: scale(1.7, 1.7)
+
+
+// alert custome style
+
+/* Цвет текста для всех уведомлений */
+
+.notyf__toast 
+  color: #fff !important 
+
+
+/* Стили для успешного уведомления */
+
+.notyf__toast--success 
+  background-color: #034A72 !important 
+
+
+
+        
 
